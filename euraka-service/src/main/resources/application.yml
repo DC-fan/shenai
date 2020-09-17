@@ -1,0 +1,13 @@
+server:
+  port: 10087
+
+spring:
+  application:
+    name: eureka-service
+
+eureka:
+  client:
+    registerWithEureka: false
+    fatchRegistry: false
+    serviceUrl:
+      defaultZone: http://127.0.0.1:${server.port}/eureka
